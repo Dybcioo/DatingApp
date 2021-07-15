@@ -5,10 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Data\UserSeedData.json" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="client\src\app\_models\user.ts" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
     <PackageReference Include="DevExpress.Xpo" Version="20.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Certificate" Version="5.0.7" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.7" />
@@ -24,6 +29,10 @@
   <ItemGroup>
     <Folder Include="client\src\app\_services\" />
     <Folder Include="client\ssl\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Data\UserSeedData.json" />
   </ItemGroup>
 
   <ItemGroup>
