@@ -1,7 +1,7 @@
 .img-thumbnail {
+  max-width: 360px;
+  max-height: 400px;
   margin: 25px;
-  width: 85%;
-  height: 85%;
 }
 
 .card-body {

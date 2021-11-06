@@ -6,6 +6,8 @@
 }
 
 .card img {
+  min-height: 200px;
+  min-width: 200px;
   transform: scale(1.0, 1.0);
   transition-duration: 500ms;
   transition-timing-function: ease-out;
@@ -33,4 +35,8 @@
 
 .animate {
   transition: all 0.3s ease-in-out;
+}
+
+.card{
+  height: 230px;
 }
