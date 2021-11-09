@@ -3,11 +3,13 @@ using System.Linq;
 using System.Threading.Tasks;
 using DatingApp.Extensions;
 using DatingApp.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 
 namespace DatingApp.Controllers
 {
+    [Authorize]
     public class PhotosController : BaseApiController
     {
         private readonly IPhotoService _photoService;
